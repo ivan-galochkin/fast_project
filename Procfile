@@ -1,1 +1,1 @@
-web: uvicorn users_api.users_api:app --host=0.0.0.0 --port=${PORT:-5000}
+web: cd users_api && uvicorn users_api:app --host=0.0.0.0 --port=${PORT:-5000}
